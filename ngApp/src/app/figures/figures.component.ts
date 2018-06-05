@@ -17,6 +17,12 @@ export class FiguresComponent implements OnInit {
   // default value of the filter univers
   univers = "All"
 
+
+  body = {
+    "figure": "",
+    "id": ""
+  }
+
   constructor(private _figuresService: FiguresService) {
   }
 
@@ -31,10 +37,7 @@ export class FiguresComponent implements OnInit {
       )
   }
 
-  body = {
-    "figure": "",
-    "id": ""
-  }
+
 
   // on click of filter button I get all figures of this univers
   getFigures(event) {
